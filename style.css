@@ -20,6 +20,11 @@ main {
   padding-top: 125px;
   width: 100%;
   overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 section {
   padding: 15px;
@@ -28,15 +33,7 @@ img {
   width: 75vw;
   height: auto;
 }
-.imge {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0,0,255,1);
-  margin: 10px auto;
-}
-.imge ~ p {
-  margin: 5px;
-}
+
 footer {
   position: fixed;
   bottom: 0;
