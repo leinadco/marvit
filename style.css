@@ -16,6 +16,10 @@ header {
   color: rgba(0,100,0,0.9);
   width: 100%;
 }
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
 main {
   padding-top: 125px;
   width: 100%;
