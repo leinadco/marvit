@@ -5,17 +5,18 @@
 }
 header {
   margin: 25px;
+  padding: 25px;
   border: 15px solid rgba(0,255,0.5);
   border-radius: 25px;
   color: rgb(0,100,0);
   background-color: white;
 }
 header h1 {
-  font-size: 150px;
+  font-size: 18vw;
   font-weight: bold;
 }
 header p {
-  font-size: 50px;
+  font-size: 8vw;
   font-weight: bold;
 }
 
@@ -24,17 +25,18 @@ main {
 
 section {
   padding: 15px;
+  margin: 15px;
 }
-section h2 {
-  font-size: 50px;
+h2 {
+  font-size: 8vw;
+  margin: 10px;
 }
 section p {
-  font-size: 30px;
+  font-size: 3vw;
 }
 
-section + h2 {
-  font-size: 50px;
-  padding: 15px;
+section ~ h2 {
+
 }
 
 .gallery {
@@ -48,10 +50,11 @@ img {
 }
 
 footer {
-  font-size: 40px;
+  font-size: 4vw;
   display: flex;
   flex-direction: row;
-  padding: 2px;
+  padding: 15px
+  margin: 15px;
 }
 footer h3 {
   
