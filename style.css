@@ -5,30 +5,37 @@
 }
 header {
   padding: 25px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 3px dotted rgba(0,255,0.5);
+  border: 15px solid rgba(0,255,0.5);
   border-radius: 15px;
   color: rgb(0,100,0);
   background-color: white;
-  width: 100%;
 }
 header h1 {
   font-size: 150px;
   font-weight: bold;
 }
 header p {
-  font-size: 100px;
+  font-size: 50px;
   font-weight: bold;
 }
+
 main {
-  padding-top: 150px;
-  width: 100%;
 }
+
 section {
   padding: 15px;
 }
+section h2 {
+  font-size: 50px;
+}
+section p {
+  font-size: 25px;
+}
+
+main h2 {
+  font-size: 50px;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
@@ -42,14 +49,10 @@ img {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.7em;
+  font-size: 40px;
   display: flex;
   flex-direction: row;
   padding: 2px;
-  font-size: 0.1em;
 }
 footer h3 {
   
