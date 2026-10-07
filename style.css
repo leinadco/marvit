@@ -1,64 +1,64 @@
 * {
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
-  margin: 25px;
-  padding: 25px;
-  border: 15px solid rgba(0,255,0.5);
-  border-radius: 25px;
-  color: rgb(0,100,0);
-  background-color: white;
+    margin: 25px;
+    padding: 25px;
+    border: 7px solid rgb(0, 127, 0);
+    border-radius: 25px;
+    color: rgb(0, 67, 0);
+    background-color: white;
 }
 header h1 {
-  font-size: 18vw;
-  font-weight: bold;
+    font-size: 55px;
+    font-weight: bold;
 }
 header p {
-  font-size: 8vw;
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 main {
+    
 }
 
 section {
-  padding: 15px;
-  margin: 15px;
+    padding: 15px;
+    margin: 15px;
 }
 h2 {
-  font-size: 8vw;
-  margin: 10px;
+    font-size: 30px;
+    margin: 10px;
 }
 section p {
-  font-size: 3vw;
-}
-
-section ~ h2 {
-
+    font-size: 15px;
 }
 
 .gallery {
+  font-size: 15px;
 }
 
 figure {
+  padding: 15px;
 }
 img {
-  width: 75vw;
-  height: auto;
+    width: 150px;
+    height: auto;
 }
 
 footer {
-  font-size: 4vw;
-  display: flex;
-  flex-direction: row;
-  padding: 15px
-  margin: 15px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
 }
 footer h3 {
-  
 }
 footer p {
-  
 }
