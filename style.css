@@ -73,7 +73,7 @@ section p {
 figure {
     padding: 7px;
 }
-img {
+figure img {
     width: 150px;
     height: auto;
     transition: width 0.5s ease-out, height 0.5s ease-out;
