@@ -78,7 +78,7 @@ figure img {
     height: auto;
     transition: width 0.5s ease-out, height 0.5s ease-out;
 }
-img:hover {
+figure img:hover {
     width: 100%;
     height: auto;
     transition: width 0.5s ease-in, height 0.5s ease-in;
