@@ -1,20 +1,20 @@
+
 * {
     box-sizing: border-box;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
 }
 
 header {
     border: 7px solid rgb(0, 127, 0);
     border-radius: 25px;
     color: rgb(0, 67, 0);
-    
 }
 
 header div {
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,9 +45,8 @@ header:hover div span:nth-child(3) {
     width: 60px;
     aspect-ratio: 1/1;
 }
-.logo + h1 {
+header h1 {
     font-size: 60px;
-    font-weight: bold;
 }
 header p {
     font-size: 24px;
@@ -58,12 +57,9 @@ main {
 }
 
 section {
-    padding: 7px;
-    margin: 15px;
 }
 h2 {
     font-size: 30px;
-    margin: 10px;
 }
 section p {
     font-size: 15px;
@@ -73,22 +69,26 @@ section p {
     font-size: 15px;
 }
 .flex-container {
-display: grid;
-grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 figure {
-    padding: 7px;
+    background-color: rgb(0, 127, 0);
 }
 figure img {
     width: 150px;
     height: auto;
-    transition: width 0.5s ease-out, height 0.5s ease-out;
+    transition:
+        width 0.5s ease-out,
+        height 0.5s ease-out;
 }
 figure img:hover {
     width: 100%;
     height: auto;
-    transition: width 0.5s ease-in, height 0.5s ease-in;
+    transition:
+        width 0.5s ease-in,
+        height 0.5s ease-in;
 }
 
 footer {
@@ -96,9 +96,4 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
-}
-footer h3 {
-}
-footer p {
 }
