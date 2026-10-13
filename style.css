@@ -73,8 +73,9 @@ section p {
     font-size: 15px;
 }
 .flex-container {
-display: flex;
-flex-direction: row;
+display: grid;
+grid-template-columns: auto auto;
+gap: 5px;
 }
 
 figure {
