@@ -72,6 +72,10 @@ section p {
 .gallery {
     font-size: 15px;
 }
+.flex-container {
+display: flex;
+flex-direction: row;
+}
 
 figure {
     padding: 7px;
