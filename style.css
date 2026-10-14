@@ -1,14 +1,25 @@
+
+/* ========================================
+   1. REGOLE GENERALI — SMARTPHONE
+   ======================================== */
+
 * {
     box-sizing: border-box;
 }
+
 body {
+    margin: 8px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+/* ========================================
+   2. INTESTAZIONE
+   ======================================== */
+
 header {
-    border: 7px solid rgb(0, 127, 0);
-    border-radius: 25px;
+    border: 5px solid rgb(0, 127, 0);
+    border-radius: 18px;
     color: rgb(0, 67, 0);
 }
 
@@ -19,80 +30,211 @@ header div {
     align-items: center;
 }
 
-
 .logo {
-    width: 70px;
+    width: 48px;
     height: auto;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
 }
 
 header h1 {
-    font-size: clamp(36px, 6vw, 70px);
+    font-size: 36px;
     margin: 0.67em 0;
 }
 
 header p {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
+    padding: 0 10px;
 }
+
 header hr {
     border: 3px solid green;
     border-radius: 25px;
+    margin: 12px 8px;
 }
 
+/* ========================================
+   3. CONTENUTO PRINCIPALE
+   ======================================== */
+
 main {
+    width: 100%;
 }
+
+section {
+    padding: 10px 4px;
+}
+
 section ~ hr {
     border: 2px solid green;
     border-radius: 25px;
+    margin: 12px 4px;
 }
-section {
-}
+
 h2 {
-    font-size: 30px;
+    font-size: 24px;
 }
+
 section p {
     font-size: 15px;
+    line-height: 1.6;
 }
+
+/* ========================================
+   4. GALLERIA FOTOGRAFICA
+   ======================================== */
 
 .gallery {
     font-size: 15px;
 }
+
 .gallery hr {
     border: 1px solid blue;
     border-radius: 25px;
-}
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-}
-.flex-container p {
-    grid-column: span 2;
-}
-.flex-container img {
-    width: 150px;
-    height: auto;
-    transition:
-        width 0.5s ease-out,
-        height 0.5s ease-out;
-}
-.flex-container img:hover {
-    width: 100%;
-    height: auto;
-    transition:
-        width 0.5s ease-in,
-        height 0.5s ease-in;
+    margin: 16px 4px;
 }
 
-footer {
-    font-size: 15px;
+.flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 10px 4px;
+}
+
+.flex-container p {
+    margin: 0 0 8px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.flex-container img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    align-self: center;
+    border-radius: 6px;
+}
+
+/* ========================================
+   5. PIÈ DI PAGINA
+   ======================================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 4px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ========================================
+   6. TABLET E SCHERMI INTERMEDI
+   ======================================== */
+
+@media (min-width: 481px) {
+    .logo {
+        width: 60px;
+    }
+
+    header {
+        border-width: 6px;
+        border-radius: 22px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header p {
+        font-size: 21px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 16px 12px;
+    }
+
+    .flex-container {
+        padding: 12px;
+    }
+
+    .flex-container img {
+        max-width: 300px;
+    }
+}
+
+/* ========================================
+   7. COMPUTER DESKTOP
+   ======================================== */
+
+@media (min-width: 769px) {
+    .logo {
+        width: 70px;
+    }
+
+    header {
+        border-width: 7px;
+        border-radius: 25px;
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .flex-container p {
+        flex-basis: 100%;
+    }
+
+    .flex-container img {
+        width: 150px;
+        max-width: calc(25% - 10px);
+        flex: 0 1 150px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 10px;
+    }
 }
