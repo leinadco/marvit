@@ -89,6 +89,10 @@ section p {
     font-size: 15px;
 }
 
+details[open] summary #work-image {
+    display: none;
+}
+
 .gallery hr {
     border: 1px solid blue;
     border-radius: 25px;
@@ -116,6 +120,7 @@ section p {
     height: auto;
     align-self: center;
     border-radius: 6px;
+    padding: 4px;
 }
 
 /* ========================================

@@ -62,14 +62,25 @@ function displayWorks() {
         const workContainer = document.createElement("div");
         workContainer.classList.add("flex-container");
 
+        const detailsElement = document.createElement("details");
+        const summaryElement = document.createElement("summary");
         const titleElement = document.createElement("h3");
         titleElement.textContent = lavoro.titolo;
-        workContainer.appendChild(titleElement);
+        summaryElement.appendChild(titleElement);
 
+        const imgElement = document.createElement("img");
+            imgElement.src = "https://raw.githubusercontent.com/leinadco/Files/refs/heads/main/Marvit/" + lavoro.immagini[0];
+            imgElement.alt = lavoro.altText;
+            imgElement.loading = "lazy";
+            imgElement.decoding = "async";
+            imgElement.id = "work-image";
+        
+        summaryElement.appendChild(imgElement);
+        detailsElement.appendChild(summaryElement);
 
         const descriptionElement = document.createElement("p");
         descriptionElement.textContent = lavoro.descrizioni;
-        workContainer.appendChild(descriptionElement);
+        detailsElement.appendChild(descriptionElement);
 
         lavoro.immagini.forEach((imageSrc) => {
             const imgElement = document.createElement("img");
@@ -77,9 +88,10 @@ function displayWorks() {
             imgElement.alt = lavoro.altText;
             imgElement.loading = "lazy";
             imgElement.decoding = "async";
-            workContainer.appendChild(imgElement);
+            detailsElement.appendChild(imgElement);
         });
         
+        workContainer.appendChild(detailsElement);
         worksContainer.appendChild(workContainer);
 
         // Add an <hr> between items, but not after the last item
