@@ -88,7 +88,22 @@ section p {
 .gallery {
     font-size: 15px;
 }
-
+details summary {
+    list-style: none;
+    padding: 3px;
+    margin-bottom: 7px;
+}
+details {
+    background-color: rgba(125, 255, 125, 0.5);
+    border-radius: 10px;
+}
+details[open] summary {
+    background-color: rgba(125, 125, 255, 0.5);
+    border-radius: 10px;
+}
+details[open] {
+    background-color: white;
+}
 details[open] summary #work-image {
     display: none;
 }
@@ -119,7 +134,7 @@ details[open] summary #work-image {
     max-width: 420px;
     height: auto;
     align-self: center;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 4px;
 }
 
