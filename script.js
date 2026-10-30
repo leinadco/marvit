@@ -1,4 +1,13 @@
 const lavori = {
+lavoro6 : {
+ titolo: "Pavimentazione in masselli esagonali: massima resistenza ai carichi e durabilità nel tempo",
+ descrizioni: "Realizzazione di pavimentazione industriale e commerciale per aree esterne e coperte, eseguita mediante la posa in opera di masselli autobloccanti modulari in calcestruzzo vibrato ad alta densità con geometria esagonale a nido d'ape. La specifica forma esagonale assicura un vincolo d'incastro perimetrale bidimensionale e una distribuzione omogenea dei carichi verticali e tangenziali, prevenendo lo scorrimento dei moduli e la formazione di avvallamenti sotto l'azione di carichi dinamici o stazionari di veicoli e mezzi d'opera. L'intervento è stato strutturato per garantire un'elevata resistenza all'usura meccanica e ai cicli di gelo-disgelo in aree adibite a parcheggio e sosta, integrate da pensiline con carpenteria metallica e plinti di fondazione in cemento armato. La posa è stata effettuata a secco su letto di allettamento in graniglia/sabbia di frantumazione, completata dalla sabbiatura di intasamento dei giunti e successiva compattazione superficiale, offrendo una superficie carrabile, parzialmente drenante e di facile manutenzione o ripristino nel tempo senza necessità di demolizioni invasive.",
+ immagini: [
+  "Tipo6-​pavimentazione-esagonale-esterna-copertura-1.jpg",
+  "Tipo6-​pavimentazione-esagonale-esterna-copertura-2.jpg"
+  ],
+ altText: "Pavimentazione industriale esterna e coperta realizzata con masselli autobloccanti esagonali in calcestruzzo"
+},
     lavoro5: {
         titolo: "Pavimentazione esterna in masselli autobloccanti per villa unifamiliare",
         descrizioni: "Realizzazione di pavimentazione perimetrale e vialetto d'accesso per villa unifamiliare con masselli autobloccanti in calcestruzzo vibrato. Il progetto prevede una pavimentazione modulare posata a secco su letto di allettamento in graniglia/sabbia, realizzata con masselli autobloccanti multiformato ad alta densità. Gli elementi, dal profilo rettangolare e con finitura superficiale ad effetto pietra/liscezza naturale in tonalità grigio cenere, offrono un'elevata resistenza alle sollecitazioni meccaniche e al carotaggio del traffico veicolare (classe di carrabilità per accessi residenziali). La composizione a corsi paralleli con giunti incastrati garantisce una perfetta distribuzione dei carichi e un drenaggio ottimale delle acque piovane lungo tutto lo sviluppo del vialetto. L'opera si integra perfettamente con il contesto architettonico e il verde circostante, unendo estetica contemporanea, durabilità nel tempo e ridotta manutenzione.",
