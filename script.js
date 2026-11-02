@@ -69,7 +69,7 @@ function displayWorks() {
     
     lavoriArray.forEach((lavoro, index) => {
         const workContainer = document.createElement("div");
-        workContainer.classList.add("flex-container");
+        workContainer.classList.add("job-container");
 
         const detailsElement = document.createElement("details");
         const summaryElement = document.createElement("summary");
