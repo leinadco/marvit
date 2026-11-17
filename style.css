@@ -171,7 +171,7 @@ footer a {
     }
 
     header h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     header p {
@@ -198,18 +198,16 @@ footer a {
     .job-container {
         padding: 12px;
     }
-   details {
+    details {
         height: 100%;
-
     }
-    details summary{
+    details summary {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
-   .job-container:has(details[open]) summary {
+    .job-container:has(details[open]) summary {
         height: auto;
     }
     .job-container:has(details[open]) {
@@ -231,16 +229,16 @@ footer a {
 
 @media (min-width: 769px) {
     .logo {
-        width: 70px;
+        width: 72px;
     }
 
     header {
         border-width: 7px;
-        border-radius: 25px;
+        border-radius: 26px;
     }
 
     header h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     header p {
@@ -252,33 +250,28 @@ footer a {
     }
 
     section {
-        padding: 20px;
+        padding: 22px 16px;
+    }
+
+    #works-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 30px;
     }
 
     .job-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 10px;
+        padding: 15px;
     }
 
-    .job-container p {
-        flex-basis: 100%;
+    .job-container:has(details[open]) {
+        grid-column: span 3;
+    }
+    .job-container:has(details[open]) img {
+        width: 50%;
+        float: left;
     }
 
     .job-container img {
-        width: 150px;
-        max-width: calc(25% - 10px);
-        flex: 0 1 150px;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        padding: 12px 10px;
+        max-width: 600px;
     }
 }
